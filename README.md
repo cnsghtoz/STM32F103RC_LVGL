@@ -1,2 +1,3 @@
 - STM32F103RC(HAL) and LCD drive by the SPI (Software simulate) 
+- Create the UART1 to get the information
 - Add the lv_tick_inc(1) sync with Systick in main()
