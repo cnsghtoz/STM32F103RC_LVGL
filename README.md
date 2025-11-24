@@ -1,0 +1,2 @@
+- STM32F103RC +LCD drive by the SPI (Software simulate) 
+- Add the lv_tick_inc(1) sync with Systick in main()
