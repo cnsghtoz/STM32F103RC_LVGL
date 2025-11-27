@@ -126,9 +126,7 @@ int main(void)
   lv_port_disp_init();
   lv_port_indev_init();
 
-  Lcd_Init();
-  LCD_LED_SET;
-  Lcd_Clear(GRAY0);
+
 
   /* ------------------------------------------------------------------- */
   lv_ex_label_1();

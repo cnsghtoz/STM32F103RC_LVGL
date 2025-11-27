@@ -12,8 +12,7 @@
 
 #include "main.h"
 #include "Lcd_Driver.h"
-//#include "LCD_Config.h"
-
+// #include "LCD_Config.h"
 
 // GPIO Initialsing
 void LCD_GPIO_Init(void)
@@ -259,6 +258,9 @@ void Lcd_Init(void)
     // DISPON (28h): Display Off
     // DISPON (29h): Display On
     Lcd_WriteIndex(0x29); // Display on
+
+    LCD_LED_SET;
+    Lcd_Clear(GRAY0);
 }
 
 /*************************************************

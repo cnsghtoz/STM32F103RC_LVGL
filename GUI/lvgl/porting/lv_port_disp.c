@@ -50,6 +50,7 @@ void lv_port_disp_init(void)
     /*-------------------------
      * Initialize your display
      * -----------------------*/
+    disp_init();
 
     /*-----------------------------
      * Create a buffer for drawing
@@ -139,11 +140,7 @@ void lv_port_disp_init(void)
 static void disp_init(void)
 {
     /*You code here*/
-    printf("<--------------------------disp_init...");
-    // HAL_Delay(500);
-    // Lcd_Init();
-    // LCD_LED_SET;
-    // Lcd_Clear(GRAY0);
+    Lcd_Init();
 }
 
 /* Flush the content of the internal buffer the specific area on the display
@@ -165,7 +162,7 @@ static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_colo
     //         color_p++;
     //     }
     // }
-    
+
     Lcd_Color_Fill(area->x1, area->y1, area->x2, area->y2, color_p);
     /* IMPORTANT!!!
      * Inform the graphics library that you are ready with the flushing*/
